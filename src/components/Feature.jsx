@@ -2,10 +2,6 @@ import { React, useState } from "react";
 import { motion } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
 
-function getImageUrl(icon) {
-  return `../img/${icon}.png`;
-}
-
 function Feature({ icon, title }) {
   const variant = {
     true: {
@@ -35,7 +31,7 @@ function Feature({ icon, title }) {
           animate={`${elementIsVisible}`}
           className="icon bg-[#081730] rounded-2xl p-4"
         >
-          <img src={getImageUrl(icon)} alt="" className="w-[3rem]" />
+          <img src={icon} alt="" className="w-[3rem]" />
         </motion.div>
 
         <span className="mt-5">{title}</span>
