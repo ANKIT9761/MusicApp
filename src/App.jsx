@@ -1,15 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
 
-import React from 'react'
+import React from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Experience from "./components/Experience";
+import Search from "./components/Search";
+
+import Download from "./components/Download";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <div className="text-white overflow-hidden">
+      <Header />
+      <Hero />
+      <Experience />
+      <Search />
+      <Download />
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
